@@ -1,4 +1,4 @@
-package com.kiroshi.rest;
+/*package com.kiroshi.rest;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -9,4 +9,4 @@ public class DemoProjApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(DemoProjApplication.class, args);
 	}
-}
+}*/
