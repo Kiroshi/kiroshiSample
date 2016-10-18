@@ -29,7 +29,7 @@ public class UmApp extends SpringBootServletInitializer {
 	/*replacement for web.xml*/
 	@Bean
 	public ServletRegistrationBean dispatcherServletRegistration(){
-		final ServletRegistrationBean servletRegistrationBean = new ServletRegistrationBean(dispatcherServlet(), "/api/*");
+		final ServletRegistrationBean servletRegistrationBean = new ServletRegistrationBean(dispatcherServlet(), "/asig/*");
 		
 		final Map<String, String> params = new HashMap<String ,String>();
 		params.put("contextClass", "org.springframework.web.context.support.AnnotationConfigWebApplicationContext");
