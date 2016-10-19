@@ -103,7 +103,7 @@
                         <containerId>tomcat8x</containerId>
                         <type>embedded</type>
                         <systemProperties>
-                            <envTarget>local</envTarget>
+                            <envTarget>dev</envTarget>
                             <persistenceTarget>cargo</persistenceTarget>
                         </systemProperties>
                     </container>

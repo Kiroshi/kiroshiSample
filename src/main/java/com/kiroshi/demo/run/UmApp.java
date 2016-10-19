@@ -1,4 +1,4 @@
-package com.kiroshi.spring;
+package com.kiroshi.demo.run;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -11,6 +11,11 @@ import org.springframework.boot.web.support.SpringBootServletInitializer;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Import;
 import org.springframework.web.servlet.DispatcherServlet;
+
+import com.kiroshi.demo.spring.UmContextConfig;
+import com.kiroshi.demo.spring.UmPersistenceJpaConfig;
+import com.kiroshi.demo.spring.UmServiceConfig;
+import com.kiroshi.demo.spring.UmWebConfig;
 
 @SpringBootApplication
 @Import({

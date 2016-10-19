@@ -1,4 +1,4 @@
-package com.kiroshi.spring;
+package com.kiroshi.demo.spring;
 
 public class UmServiceConfig {
 
