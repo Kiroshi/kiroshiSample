@@ -19,7 +19,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 @Configuration
 @EnableTransactionManagement
-@ComponentScan("com.kiroshi.um.persistence") 
+@ComponentScan("com.kiroshi.demo.persistence") 
 @PropertySource({"classpat:persistence-${persistenceTarget:h2}.properties"}) 
 @EnableJpaRepositories(basePackages="com.kiroshi.persistence.dao")
 public class UmPersistenceJpaConfig {
@@ -36,7 +36,7 @@ public class UmPersistenceJpaConfig {
     public LocalContainerEntityManagerFactoryBean entityManagerFactory() {
         final LocalContainerEntityManagerFactoryBean em = new LocalContainerEntityManagerFactoryBean();
         em.setDataSource(dataSource());
-        em.setPackagesToScan(new String[] { "com.kiroshi.um" });
+        em.setPackagesToScan(new String[] { "com.kiroshi.demo" });
         final HibernateJpaVendorAdapter vendorAdapter = new HibernateJpaVendorAdapter();
         em.setJpaVendorAdapter(vendorAdapter);
         em.setJpaProperties(setAdditionalProperties());
