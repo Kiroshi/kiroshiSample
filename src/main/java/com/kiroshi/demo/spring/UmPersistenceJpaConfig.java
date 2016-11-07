@@ -20,8 +20,8 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 @Configuration
 @EnableTransactionManagement
 @ComponentScan("com.kiroshi.demo.persistence") 
-@PropertySource({"classpat:persistence-${persistenceTarget:h2}.properties"}) 
-@EnableJpaRepositories(basePackages="com.kiroshi.persistence.dao")
+@PropertySource({"classpath:persistence-${persistenceTarget:h2}.properties"}) 
+@EnableJpaRepositories(basePackages="com.kiroshi.demo.persistence.dao")
 public class UmPersistenceJpaConfig {
 
 	@Autowired

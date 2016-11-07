@@ -14,7 +14,7 @@ import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.SerializationFeature;
 
 @Configuration
-@ComponentScan("com.kiroshi.web") 
+@ComponentScan("com.kiroshi.demo.web") 
 @EnableWebMvc
 //extend is used to hook up into spring webconfig  in order to override config methods
 public class UmWebConfig extends WebMvcConfigurerAdapter{
